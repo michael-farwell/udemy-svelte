@@ -63,7 +63,8 @@
   </div>
 </div>
 
-<button on:click={addContact}>
+<button on:click|preventDefault={addContact}
+        type="submit">
   Add Contact Card
 </button>
 
